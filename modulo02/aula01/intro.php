@@ -1,26 +1,24 @@
 <?php
 
 include 'Aluno.php';
+include 'Professor.php';
+include 'Curso.php';
+
+$a = 10;
+$b = 'dez';
 
 $a1 = new Aluno();
-$a1->nome = 'Alessandro';
+$a1->nome = 'Camila';
 $a1->cpf = '123.123.123-12';
 
-$aluno = [
-  'nome' => 'Alessandro',
-  'cpf' => '123.123.123-12',
+$a1->nome .= 'Ferreira';
 
-];
-
-$aluno2 = [
-  'Nome' => 'Bruno',
-  'cpf' => '123.111.222-33',
-
-];
+$cursoPHP = new Curso();
+$cursoPHP->nome = 'Introducao ao PHP';
+$cursoPHP->cargaHoraria = 88; 
+$cursoPHP->descricao = 'Aprender o basico e intermediario de PHP';
 
 
-$aluno3 = [
-  'NOME' => 'Raquel',
-  'CPF' => '345.888.111-84',
+$professor = new Professor();
 
-];
+echo "<h1>Aluno: {$a1->nome}</h1>";

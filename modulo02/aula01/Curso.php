@@ -6,6 +6,6 @@ class Curso{
 
   public $nomeCurso;
   public $cargaHoraria;
-  public $disciplinas;
+  public $descricao;
 
 }

@@ -5,8 +5,8 @@ declare(strict_types=1);
 
 class Professor{
 
-  public $nomeProfessor;
+  public $nome;
   public $cpf;
-  
+  public $salario;
 
 }
