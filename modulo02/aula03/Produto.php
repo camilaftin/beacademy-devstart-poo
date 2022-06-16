@@ -6,12 +6,30 @@ class Produto{
   //atributos
   private string $nome;
   private float $valor;
+  private string $descricao;
 
   //metodos
   // public function teste(string $palavra):string
   // {
   //   return "Voce esta testando com a {$palavra}";
   // }
+
+  public function __construct(string $novoNome, float $novoValor){
+
+    $this->nome = $novoNome;
+    $this->valor = $novoValor;
+
+  }
+
+  public function getDescricao():string 
+  {
+    return $this->descricao;
+  }
+
+  public function setDescricao(string $novaDescricao):void 
+  {
+    $this->descricao = $novaDescricao;
+  }
 
   public function getNome():string 
   {
