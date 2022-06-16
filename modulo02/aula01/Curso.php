@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 class Curso{
 
-  public $nomeCurso;
-  public $cargaHoraria;
-  public $descricao;
+  public string $nomeCurso;
+  public int $cargaHoraria;
+  public string $descricao;
 
 }

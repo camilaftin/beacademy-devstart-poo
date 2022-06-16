@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 class Disciplina{
 
-  public $nomeDisciplina;
-  public $cargaHorariaDaDisciplina;
-  public $professores;
+  public string $nomeDisciplina;
+  public int $cargaHorariaDaDisciplina;
+  public string $professores;
 
 }
