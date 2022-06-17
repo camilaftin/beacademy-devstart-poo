@@ -7,17 +7,14 @@ class Produto{
   private string $nome;
   private float $valor;
   private string $descricao;
+  private readonly Categoria $categoria;
 
   //metodos
-  // public function teste(string $palavra):string
-  // {
-  //   return "Voce esta testando com a {$palavra}";
-  // }
-
-  public function __construct(string $novoNome, float $novoValor){
+  public function __construct(string $novoNome, float $novoValor, Categoria $categoria){
 
     $this->nome = $novoNome;
     $this->valor = $novoValor;
+    $this->categoria = $categoria;
 
   }
 
@@ -55,6 +52,11 @@ class Produto{
     }
 
     $this->valor = $novoValor;
+  }
+
+  public function setCategoria(Categoria $categoria):void
+  {
+    $this->categoria = $categoria;
   }
 
 }
